@@ -1,0 +1,84 @@
+Last login: Wed Jan 30 21:31:59 on ttys000
+Mikko-MacBook-Air:~ mehyvari$ ls
+Applications		Music			corr1.R
+Coursera		Pictures		corr2.R
+Desktop			Public			hw1_data.csv
+Documents		R_W2_P1.R		mehyvari_data
+Downloads		Test_foo.R		octave-workspace
+Dropbox			assignment2		pollutantmean.R
+Kuvatkirjaksi Projects	complete.R		specdata
+Library			complete1.R		test.R
+Movies			corr.R			testdir
+Mikko-MacBook-Air:~ mehyvari$ cd assignment2
+Mikko-MacBook-Air:assignment2 mehyvari$ ls
+ProgrammingAssignment2
+Mikko-MacBook-Air:assignment2 mehyvari$ cd ProgrammingAssignment2/
+Mikko-MacBook-Air:ProgrammingAssignment2 mehyvari$ ls
+README.md	cachematrix.R
+Mikko-MacBook-Air:ProgrammingAssignment2 mehyvari$ git commit -r cachematrix.R "First commit"
+error: unknown switch `r'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+Mikko-MacBook-Air:ProgrammingAssignment2 mehyvari$ git commit cachematrix.R "First commit"
+error: pathspec 'First commit' did not match any file(s) known to git
+Mikko-MacBook-Air:ProgrammingAssignment2 mehyvari$ git commit "First commit"
+error: pathspec 'First commit' did not match any file(s) known to git
+Mikko-MacBook-Air:ProgrammingAssignment2 mehyvari$ git commit "cachematrix.R"
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+Mikko-MacBook-Air:ProgrammingAssignment2 mehyvari$ 
+Mikko-MacBook-Air:ProgrammingAssignment2 mehyvari$ git commit "cachematrix.R"
+hint: Waiting for your editor to close the file... 
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#       modified:   cachematrix.R
+"Assignment 2 with commented code"
+
+-- INSERT --
